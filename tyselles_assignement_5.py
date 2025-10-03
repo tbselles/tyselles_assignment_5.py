@@ -29,4 +29,16 @@ for divisor in range(2, num):
         break
 if is_prime:
     print(f"{num} is prime!")
+# === Challenge 3: Multiplication Table ===
+print("=== Challenge 3: Multiplication Table ===")
 
+# Print a formatted 1–10 multiplication table
+print("     ", end="")     # top-left corner spacing
+for i in range(1, 11):
+    print(f"{i:4}", end="")
+print()
+for row in range(1, 11):
+    print(f"{row:2}", end="  ")   # row labels
+    for col in range(1, 11):
+        print(f"{row*col:4}", end="")
+    print()
